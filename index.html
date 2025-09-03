@@ -1,294 +1,435 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<!-- saved from url=(0023)http://www.nd.edu/~meg/ -->
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:w="urn:schemas-microsoft-com:office:word"
-xmlns="http://www.w3.org/TR/REC-html40"> 
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=ProgId content=Word.Document>
-<meta name=Generator content="Microsoft Word 9">
-<meta name=Originator content="Microsoft Word 9">
-<link rel=File-List href="./index_files/filelist.xml">
-<link rel=Edit-Time-Data href="./index_files/editdata.mso">
-<!--[if !mso]>
-<style>
-v\:* {behavior:url(#default#VML);}
-o\:* {behavior:url(#default#VML);}
-w\:* {behavior:url(#default#VML);}
-.shape {behavior:url(#default#VML);}
-</style>
-<![endif]-->
-<title>Midwest Econometrics Group (MEG)</title>
-<!--[if gte mso 9]><xml>
- <w:WordDocument>
-  <w:Zoom>125</w:Zoom>
-  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
- </w:WordDocument>
-</xml><![endif]-->
-<style>
-<!--
- /* Style Definitions */
-p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{mso-style-parent:"";
-	margin:0in;
-	margin-bottom:.0001pt;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Times New Roman";
-	mso-fareast-font-family:"Times New Roman";}
-h1
-	{margin-right:0in;
-	mso-margin-top-alt:auto;
-	mso-margin-bottom-alt:auto;
-	margin-left:0in;
-	mso-pagination:widow-orphan;
-	mso-outline-level:1;
-	font-size:24.0pt;
-	font-family:"Times New Roman";
-	mso-font-kerning:18.0pt;
-	font-weight:bold;}
-h2
-	{margin-right:0in;
-	mso-margin-top-alt:auto;
-	mso-margin-bottom-alt:auto;
-	margin-left:0in;
-	mso-pagination:widow-orphan;
-	mso-outline-level:2;
-	font-size:18.0pt;
-	font-family:"Times New Roman";
-	font-weight:bold;}
-h3
-	{margin-right:0in;
-	mso-margin-top-alt:auto;
-	mso-margin-bottom-alt:auto;
-	margin-left:0in;
-	mso-pagination:widow-orphan;
-	mso-outline-level:3;
-	font-size:13.5pt;
-	font-family:"Times New Roman";
-	font-weight:bold;}
-a:link, span.MsoHyperlink
-	{color:navy;
-	text-decoration:underline;
-	text-underline:single;}
-a:visited, span.MsoHyperlinkFollowed
-	{color:fuchsia;
-	text-decoration:underline;
-	text-underline:single;}
-p
-	{margin-right:0in;
-	mso-margin-top-alt:auto;
-	mso-margin-bottom-alt:auto;
-	margin-left:0in;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Times New Roman";
-	mso-fareast-font-family:"Times New Roman";}
-@page Section1
-	{size:8.5in 11.0in;
-	margin:1.0in 1.25in 1.0in 1.25in;
-	mso-header-margin:.5in;
-	mso-footer-margin:.5in;
-	mso-paper-source:0;}
-div.Section1
-	{page:Section1;}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midwest Econometrics Group (MEG)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<!--[if gte mso 9]><xml>
- <o:shapedefaults v:ext="edit" spidmax="1027"/>
-</xml><![endif]--><!--[if gte mso 9]><xml>
- <o:shapelayout v:ext="edit">
-  <o:idmap v:ext="edit" data="1"/>
- </o:shapelayout></xml><![endif]-->
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header h2 {
+            font-size: 1.3rem;
+            color: #7f8c8d;
+            font-weight: 400;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .section h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: 500;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .director-info, .upcoming-meeting {
+            text-align: center;
+        }
+
+        .director-info h4, .upcoming-meeting h4 {
+            font-size: 1.4rem;
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+
+        .director-info a, .upcoming-meeting a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .director-info a:hover, .upcoming-meeting a:hover {
+            color: #2980b9;
+        }
+
+        .awards-fellows {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .award-link, .fellow-link {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: block;
+        }
+
+        .award-link:hover, .fellow-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(52, 152, 219, 0.3);
+            color: white;
+        }
+
+        .award-link h4, .fellow-link h4 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        .meetings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .meeting-card {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .meeting-card:hover {
+            border-color: #3498db;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(52, 152, 219, 0.15);
+        }
+
+        .meeting-card .year {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .meeting-card .location {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+        }
+
+        .meeting-card a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .meeting-card a:hover {
+            text-decoration: underline;
+        }
+
+        .links-section {
+            text-align: center;
+        }
+
+        .links-section h4 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .external-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .external-links a {
+            background: #34495e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+        }
+
+        .external-links a:hover {
+            background: #2c3e50;
+        }
+
+        .email-list {
+            margin-top: 20px;
+        }
+
+        .email-list a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 0 10px;
+        }
+
+        .email-list a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 2.2rem;
+            }
+
+            .header h2 {
+                font-size: 1.1rem;
+            }
+
+            .awards-fellows {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .meetings-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .external-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
-
-<body bgcolor="#66cccc" lang=EN-US link=navy vlink=fuchsia style='tab-interval:
-.5in'>
-
-<div class=Section1>
-
-<h1>Midwest Econometrics Group (MEG)</h1>
-
-<h3>Econometric Theory, Methods and Empirical Applications</h3>
-
-<div class=MsoNormal align=center style='text-align:center'>
-
-<hr size=2 width="100%" align=center>
-
-</div>
-
-<h2>MEG Director/Coordinator:</h2>
-<h3><a href=https://economics.indiana.edu/about/faculty/chang-yoosoon.html>Yoosoon Chang </a>(Indiana University)</h3>
-
-<div class=MsoNormal align=center style='text-align:center'>
-
-<hr size=2 width="100%" align=center>
-
-</div>
-
-<div class=Section1>
-
-<h2>Upcoming MEG 2025 Meeting:</h2>
-
-<h3><a href=https://economics.illinois.edu/>University of Illinois at Urbana-Champaign </a>(2025)</h3>
-
-
-<div class=MsoNormal align=center style='text-align:center'>
-
-<hr size=2 width="100%" align=center>
-
-</div>
-
-<h2><u><span style='font-size:17.0pt;color:navy'><a
-href="http://www.nd.edu/~meg/Students.htm">MEG Best Student Paper Award</a></span></u><span class=MsoHyperlink><span style='font-size:16.0pt;
-color:windowtext;text-decoration:none;text-underline:none'><o:p></o:p></span></span></h2>
-
-<h2><u><span style='font-size:17.0pt;color:navy'><a
-href="http://www.nd.edu/~meg/Fellows.htm">Fellows of the Midwest Econometrics
-Group</a></span></u><span class=MsoHyperlink><span style='font-size:16.0pt;
-color:windowtext;text-decoration:none;text-underline:none'><o:p></o:p></span></span></h2>
-
-
-<div class=MsoNormal align=center style='text-align:center'>
-
-<hr size=2 width="100%" align=center>
-
-</div>
-
-
-<h2>MEG Meetings:</h2>
-
-<h1>
-<a href=https://economics.illinois.edu/>2025 </a><span style='font-size:
-13.5pt'>University of Illinois (Urbana-Champaign)</span><br>
-
-<a href=http://www.nd.edu/~meg/2024.pdf>2024 </a><span style='font-size:
-13.5pt'>University of Kentucky (Lexington)</span><br>
-
-<a href=http://www.nd.edu/~meg/2023.pdf>2023 </a><span style='font-size:
-13.5pt'>Federal Reserve Bank of Cleveland (Cleveland)</span><br>
-
-<a href=http://www.nd.edu/~meg/2022.pdf>2022 </a><span style='font-size:
-13.5pt'>Michigan State University (East Lansing)</span><br>
-
-<a href=http://econ.msu.edu>2021 </a><span style='font-size:
-13.5pt'>Postponed for second year due to COVID-19.</span><br>
-
-<a href=http://econ.msu.edu>2020 </a><span style='font-size:
-13.5pt'>Postponed for one year due to COVID-19.</span><br>
-
-<a href=http://www.nd.edu/~meg/2019.pdf>2019 </a><span style='font-size:
-13.5pt'>Ohio State University (Columbus)</span><br>
-
-<a href=http:/www.nd.edu/~meg/2018.pdf>2018 </a><span style='font-size:
-13.5pt'>University of Wisconsin (Madison)</span><br>
-
-<a href=http://www.nd.edu/~meg/2017.pdf>2017 </a><span style='font-size:
-13.5pt'>Texas A&M University (College Station)</span><br>
-
-<a href=http://www.nd.edu/~meg/2016.pdf>2016 </a><span style='font-size:
-13.5pt'>University of Illinois (Urbana-Champaign)</span><br>
-
-<a href=http://www.nd.edu/~meg/2015.pdf>2015 </a><span style='font-size:
-13.5pt'>Federal Reserve Bank of St. Louis (St. Louis)</span><br>
-
-<a href=http://www.nd.edu/~meg/2014.pdf>2014 </a><span style='font-size:
-13.5pt'>University of Iowa (Iowa City)</span><br>
-
-<a href=http://www.nd.edu/~meg/2013.pdf>2013 </a><span style='font-size:
-13.5pt'>Indiana University (Bloomington)</span><br>
-
-<a href=http://www.nd.edu/~meg/2012.pdf>2012 </a><span style='font-size:
-13.5pt'>University of Kentucky (Lexington)</span><br>
-
-<a href="http://faculty.chicagobooth.edu/midwest.econometrics/index.html">2011 </a><span style='font-size:
-13.5pt'>University of Chicago (Booth School)</span><br>
-
-<a href="http://www.nd.edu/~meg/2010.pdf">2010 </a><span style='font-size:
-13.5pt'>Washington University (St. Louis)</span><br>
-
-<a href="http://www.nd.edu/~meg/2009.pdf">2009 </a><span style='font-size:
-13.5pt'>Purdue University (West Lafayette)</span><br>
-
-<a href="http://www.nd.edu/~meg/2008.pdf">2008 </a><span style='font-size:
-13.5pt'>University of Kansas (Lawrence)</span><br>
-
-<a href="http://pages.slu.edu/faculty/rapachde/MEG_07.htm">2007 </a><span style='font-size:
-13.5pt'>St. Louis University (St. Louis)</span><br>
-
-<a href="http://www.nd.edu/~meg/2006.pdf">2006 </a><span style='font-size:
-13.5pt'>University of Cincinnati (Cincinnati)</span><br>
-
-<a href="http://www.nd.edu/~meg/2005.pdf">2005 </a><span style='font-size:
-13.5pt'>Southern Illinois University (Carbondale)</span><br>
-
-<a href="http://www.nd.edu/~meg/2004.html">2004 </a><span style='font-size:
-13.5pt'>Northwestern University (Evanston)</span><br>
-
-<a href="http://www.nd.edu/~meg/2003.html">2003 </a><span style='font-size:
-13.5pt'>University of Missouri (Columbia)</span><br>
-
-<a href="http://www.nd.edu/~meg/2002.html">2002 </a><span style='font-size:
-13.5pt'>The Ohio State University (Columbus)</span><br>
-
-<a href="http://www.nd.edu/~meg/2001.html">2001 </a><span style='font-size:
-13.5pt'>Federal Reserve Bank of Kansas City (Kansas City)</span><br>
-
-<a href="http://www.nd.edu/~meg/2000.html">2000 </a><span style='font-size:
-13.5pt'>University of Chicago (Hyde Park)</span><br>
-
-<a href="http://www.nd.edu/~meg/1999.html">1999 </a><span style='font-size:
-13.5pt'>Iowa State University (Ames)</span><br>
-
-<a href="http://www.nd.edu/~meg/1998.html">1998 </a><span style='font-size:
-13.5pt'>Indiana University (Bloomington)</span><br>
-
-<a href="http://www.nd.edu/~meg/1997.html">1997 </a><span style='font-size:
-13.5pt'>Michigan State University (East Lansing)</span><br>
-
-<a href="http://www.nd.edu/~meg/1996.html">1996 </a><span style='font-size:
-13.5pt'>University of Wisconsin (Madison)</span><br>
-
-<a href="http://www.nd.edu/~meg/1995.html">1995 </a><span style='font-size:
-13.5pt'>Washington University (St. Louis)</span><br>
-
-<a href="http://www.nd.edu/~meg/1994.html">1994 </a><span style='font-size:
-13.5pt'>University of Iowa (Iowa City)</span><br>
-
-<a href="http://www.nd.edu/~meg/1993.html">1993 </a><span style='font-size:
-13.5pt'>University of Illinois (Urbana-Champaign)</span><br>
-
-<a href="http://www.nd.edu/~meg/1992.html">1992 </a><span style='font-size:
-13.5pt'>Federal Reserve Bank of Minneapolis (Minneapolis)</span><br>
-
-<a href="http://www.nd.edu/~meg/1991.html">1991 </a><span style='font-size:
-13.5pt'>University of Notre Dame (South Bend)<o:p></o:p></span></h1>
-
-
-
-<h3><br>
-<a href="https://list.indiana.edu/sympa/subscribe/meg-l"> Join</a> or <a
-href="https://list.indiana.edu/sympa/sigrequest/meg-l">leave</a> MEG email list.</h3>
-
-<h3>Link to<a href="http://www.econometricsociety.org/"> The Econometric
-Society.</a> <br>
-
-Link to<a href="http://mea.grinnell.edu"> Midwest Economics Association.</a>
-<br>
-Link to<a href="http://midwestfinance.org"> Midwest Finance
-Association. </a><br>
-
-Link to<a href="http://condor.depaul.edu/iea"> Illinois Economics
-Association.</a> <br>
-
-<a href="http://www.nd.edu/~meg/links.html">_</a> </h3>
-
-</div>
-
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Midwest Econometrics Group</h1>
+            <h2>Econometric Theory, Methods and Empirical Applications</h2>
+        </header>
+
+        <section class="section">
+            <h3>MEG Director/Coordinator</h3>
+            <div class="director-info">
+                <h4><a href="https://economics.indiana.edu/about/faculty/chang-yoosoon.html">Yoosoon Chang</a></h4>
+                <p>Indiana University</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3>Upcoming MEG 2025 Meeting</h3>
+            <div class="upcoming-meeting">
+                <h4><a href="https://economics.illinois.edu/">University of Illinois at Urbana-Champaign</a></h4>
+                <p>2025</p>
+            </div>
+        </section>
+
+        <div class="awards-fellows">
+            <a href="awards.html" class="award-link">
+                <h4>MEG Best Student Paper Award</h4>
+                <p>Recognition for outstanding student research</p>
+            </a>
+            <a href="fellows.html" class="fellow-link">
+                <h4>Fellows of the Midwest Econometrics Group</h4>
+                <p>Honoring distinguished contributors</p>
+            </a>
+        </div>
+
+        <section class="section">
+            <h3>MEG Meetings</h3>
+            <div class="meetings-grid">
+                <div class="meeting-card">
+                    <div class="year"><a href="https://economics.illinois.edu/">2025</a></div>
+                    <div class="location">University of Illinois (Urbana-Champaign)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2024.pdf">2024</a></div>
+                    <div class="location">University of Kentucky (Lexington)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2023.pdf">2023</a></div>
+                    <div class="location">Federal Reserve Bank of Cleveland (Cleveland)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2022.pdf">2022</a></div>
+                    <div class="location">Michigan State University (East Lansing)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year">2021</div>
+                    <div class="location">Postponed due to COVID-19</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year">2020</div>
+                    <div class="location">Postponed due to COVID-19</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2019.pdf">2019</a></div>
+                    <div class="location">Ohio State University (Columbus)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2018.pdf">2018</a></div>
+                    <div class="location">University of Wisconsin (Madison)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2017.pdf">2017</a></div>
+                    <div class="location">Texas A&M University (College Station)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2016.pdf">2016</a></div>
+                    <div class="location">University of Illinois (Urbana-Champaign)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2015.pdf">2015</a></div>
+                    <div class="location">Federal Reserve Bank of St. Louis (St. Louis)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2014.pdf">2014</a></div>
+                    <div class="location">University of Iowa (Iowa City)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2013.pdf">2013</a></div>
+                    <div class="location">Indiana University (Bloomington)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2012.pdf">2012</a></div>
+                    <div class="location">University of Kentucky (Lexington)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="http://faculty.chicagobooth.edu/midwest.econometrics/index.html">2011</a></div>
+                    <div class="location">University of Chicago (Booth School)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2010.pdf">2010</a></div>
+                    <div class="location">Washington University (St. Louis)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2009.pdf">2009</a></div>
+                    <div class="location">Purdue University (West Lafayette)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2008.pdf">2008</a></div>
+                    <div class="location">University of Kansas (Lawrence)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="http://pages.slu.edu/faculty/rapachde/MEG_07.htm">2007</a></div>
+                    <div class="location">St. Louis University (St. Louis)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2006.pdf">2006</a></div>
+                    <div class="location">University of Cincinnati (Cincinnati)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2005.pdf">2005</a></div>
+                    <div class="location">Southern Illinois University (Carbondale)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2004.html">2004</a></div>
+                    <div class="location">Northwestern University (Evanston)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2003.html">2003</a></div>
+                    <div class="location">University of Missouri (Columbia)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2002.html">2002</a></div>
+                    <div class="location">The Ohio State University (Columbus)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2001.html">2001</a></div>
+                    <div class="location">Federal Reserve Bank of Kansas City (Kansas City)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/2000.html">2000</a></div>
+                    <div class="location">University of Chicago (Hyde Park)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/1999.html">1999</a></div>
+                    <div class="location">Iowa State University (Ames)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/1998.html">1998</a></div>
+                    <div class="location">Indiana University (Bloomington)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/1997.html">1997</a></div>
+                    <div class="location">Michigan State University (East Lansing)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/1996.html">1996</a></div>
+                    <div class="location">University of Wisconsin (Madison)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/1995.html">1995</a></div>
+                    <div class="location">Washington University (St. Louis)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/1994.html">1994</a></div>
+                    <div class="location">University of Iowa (Iowa City)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/1993.html">1993</a></div>
+                    <div class="location">University of Illinois (Urbana-Champaign)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/1992.html">1992</a></div>
+                    <div class="location">Federal Reserve Bank of Minneapolis (Minneapolis)</div>
+                </div>
+                <div class="meeting-card">
+                    <div class="year"><a href="programs/1991.html">1991</a></div>
+                    <div class="location">University of Notre Dame (South Bend)</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section links-section">
+            <h4>Email List</h4>
+            <div class="email-list">
+                <a href="https://list.indiana.edu/sympa/subscribe/meg-l">Join</a> or 
+                <a href="https://list.indiana.edu/sympa/sigrequest/meg-l">Leave</a> MEG email list
+            </div>
+            
+            <h4>Related Organizations</h4>
+            <div class="external-links">
+                <a href="http://www.econometricsociety.org/">The Econometric Society</a>
+                <a href="http://mea.grinnell.edu">Midwest Economics Association</a>
+                <a href="http://midwestfinance.org">Midwest Finance Association</a>
+                <a href="http://condor.depaul.edu/iea">Illinois Economics Association</a>
+            </div>
+        </section>
+    </div>
 </body>
-
 </html>
-
