@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEG Fellows - Midwest Econometrics Group</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: #2980b9;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .fellows-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .fellows-table th {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 15px 10px;
+            text-align: left;
+            font-weight: 500;
+            border-bottom: 2px solid #2980b9;
+        }
+
+        .fellows-table td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .fellows-table tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .fellows-table tbody tr:nth-child(even) {
+            background-color: #fbfbfb;
+        }
+
+        .fellows-table tbody tr:nth-child(even):hover {
+            background-color: #f1f2f6;
+        }
+
+        .year-cell {
+            font-weight: 500;
+            color: #2c3e50;
+            min-width: 80px;
+        }
+
+        .keynote-cell {
+            font-weight: 500;
+            color: #e74c3c;
+            min-width: 80px;
+        }
+
+        .name-cell {
+            font-weight: 500;
+            color: #34495e;
+        }
+
+        .special-note {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        .table-header {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 500;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 2.2rem;
+            }
+
+            .fellows-table {
+                font-size: 0.9rem;
+            }
+
+            .fellows-table th,
+            .fellows-table td {
+                padding: 8px 6px;
+            }
+
+            .table-header {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .fellows-table {
+                font-size: 0.8rem;
+            }
+
+            .fellows-table th,
+            .fellows-table td {
+                padding: 6px 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Main Page</a>
+        
+        <header class="header">
+            <h1>MEG Fellows</h1>
+        </header>
+
+        <section class="section">
+            <h2 class="table-header">Fellows of the Midwest Econometrics Group</h2>
+            <table class="fellows-table">
+                <thead>
+                    <tr>
+                        <th>Host Year</th>
+                        <th>Keynote Year</th>
+                        <th>Fellow</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="year-cell">—</td>
+                        <td class="keynote-cell">—</td>
+                        <td class="name-cell">Jason I. Abrevaya <span class="special-note">(former MEG Co-Director/Coordinator)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">1993</td>
+                        <td class="keynote-cell">—</td>
+                        <td class="name-cell">Anil K. Bera</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">1999</td>
+                        <td class="keynote-cell">—</td>
+                        <td class="name-cell">Yannis Bilias</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">2019</td>
+                        <td class="keynote-cell">—</td>
+                        <td class="name-cell">Jason Blevins</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">2012</td>
+                        <td class="keynote-cell">—</td>
+                        <td class="name-cell">Chris Bollinger</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">2024</td>
+                        <td class="keynote-cell">—</td>
+                        <td class="name-cell">Chris Bollinger</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">—</td>
+                        <td class="keynote-cell">—</td>
+                        <td class="name-cell">Yoonsoon Chang <span class="special-note">(MEG Director/Coordinator)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">2013</td>
+                        <td class="keynote-cell">—</td>
+                        <td class="name-cell">Yoonsoon Chang</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">—</td>
+                        <td class="keynote-cell">2016</td>
+                        <td class="name-cell">Xiaohong Chen</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">—</td>
+                        <td class="keynote-cell">2014</td>
+                        <td class="name-cell">Victor Chernozhukov</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">1995</td>
+                        <td class="keynote-cell">2009</td>
+                        <td class="name-cell">Siddhartha Chib</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">2010</td>
+                        <td class="keynote-cell">2010</td>
+                        <td class="name-cell">Siddhartha Chib</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">2023</td>
+                        <td class="keynote-cell">—</td>
+                        <td class="name-cell">Todd Clark</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">2002</td>
+                        <td class="keynote-cell">—</td>
+                        <td class="name-cell">Stephen R. Cosslett</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">2019</td>
+                        <td class="keynote-cell">—</td>
+                        <td class="name-cell">Robert de Jong</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">—</td>
+                        <td class="keynote-cell">2015</td>
+                        <td class="name-cell">Graham Elliott</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">2001</td>
+                        <td class="keynote-cell">—</td>
+                        <td class="name-cell">Andrew J. Filardo</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">2014</td>
+                        <td class="keynote-cell">—</td>
+                        <td class="name-cell">Antonio Galvao</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">1992</td>
+                        <td class="keynote-cell">1995</td>
+                        <td class="name-cell">John F. Geweke</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">—</td>
+                        <td class="keynote-cell">2017</td>
+                        <td class="name-cell">Domenico Giannone</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">1996</td>
+                        <td class="keynote-cell">1994</td>
+                        <td class="name-cell">Arthur S. Goldberger</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">—</td>
+                        <td class="keynote-cell">2005</td>
+                        <td class="name-cell">William H. Greene</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">—</td>
+                        <td class="keynote-cell">2010</td>
+                        <td class="name-cell">Edward Greenberg</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">—</td>
+                        <td class="keynote-cell">2006</td>
+                        <td class="name-cell">Bruce E. Hansen</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">—</td>
+                        <td class="keynote-cell">2010</td>
+                        <td class="name-cell">Bruce E. Hansen</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">2011</td>
+                        <td class="keynote-cell">—</td>
+                        <td class="name-cell">Christian B. Hansen</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">—</td>
+                        <td class="keynote-cell">2004</td>
+                        <td class="name-cell">Lars P. Hansen</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">2000</td>
+                        <td class="keynote-cell">1998</td>
+                        <td class="name-cell">James J. Heckman</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">2024</td>
+                        <td class="keynote-cell">—</td>
+                        <td class="name-cell">Ana Maria Herrera</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">1994</td>
+                        <td class
